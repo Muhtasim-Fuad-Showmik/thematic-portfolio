@@ -1,12 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 export function AnimatedBackgroundElements({
   className = "",
-  backgroundMousePosition,
 }: {
   className?: string;
-  backgroundMousePosition: ScreenPositionType;
 }) {
+  const [backgroundMousePosition, setBackgroundMousePosition] =
+    useState<ScreenPositionType>({
+      x: 0,
+      y: 0,
+    });
+
+  useEffect(() => {
+    const handleMouseMove = (e: { clientX: number; clientY: number }) => {
+      setBackgroundMousePosition({ x: e.clientX, y: e.clientY });
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   return (
     <div
       className={`fixed inset-0 pointer-events-none opacity-5 ${className}`}
