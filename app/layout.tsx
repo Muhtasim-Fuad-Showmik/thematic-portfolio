@@ -1,4 +1,5 @@
 import { AnimatedBackgroundElements } from "@/components/animated-background-elements";
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
@@ -40,9 +41,7 @@ export default function RootLayout({
             <AnimatedBackgroundElements />
             <Navbar />
             {children}
-            <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-              <p>© 2025 Thematic Portfolio. All rights reserved.</p>
-            </footer>
+            <Footer />
           </main>
         </ThemeProvider>
       </body>

@@ -1,3 +1,4 @@
+import { socials } from "@/constants/socials";
 import { ChevronRight, Github, Linkedin, Mail } from "lucide-react";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { AnimatedPixelGrid } from "../animated-pixel-grid";
@@ -39,19 +40,19 @@ const HeroSection = () => {
             </button>
             <div className="flex gap-4">
               <a
-                href="https://github.com/Muhtasim-Fuad-Showmik"
+                href={socials.github}
                 className="transition-colors transform hover:scale-110 text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400"
               >
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://www.linkedin.com/in/muhtasim-fuad-showmik-8b3ab31aa/"
+                href={socials.linkedin}
                 className="transition-colors transform hover:scale-110 text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://leetcode.com/u/Muhtasim-Fuad-Showmik/"
+                href={socials.leetcode}
                 className="transition-colors transform hover:scale-110 text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400"
               >
                 <TbBrandLeetcode className="w-6 h-6" />
