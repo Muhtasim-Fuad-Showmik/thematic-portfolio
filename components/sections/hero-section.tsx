@@ -1,4 +1,5 @@
 import { ChevronRight, Github, Linkedin, Mail } from "lucide-react";
+import { AnimatedPixelGrid } from "../animated-pixel-grid";
 import ProfileImageReveal from "../profile-image-reveal";
 
 const HeroSection = () => {
@@ -50,6 +51,11 @@ const HeroSection = () => {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="absolute bottom-0 left-0 w-full">
+        <div className="flex justify-center">
+          <AnimatedPixelGrid size={10} count={12} opacity={0.2} />
         </div>
       </div>
     </section>
