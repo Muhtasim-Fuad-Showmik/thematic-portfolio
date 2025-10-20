@@ -1,4 +1,5 @@
 import { ChevronRight, Github, Linkedin, Mail } from "lucide-react";
+import { TbBrandLeetcode } from "react-icons/tb";
 import { AnimatedPixelGrid } from "../animated-pixel-grid";
 import ProfileImageReveal from "../profile-image-reveal";
 
@@ -48,6 +49,12 @@ const HeroSection = () => {
                 className="transition-colors transform hover:scale-110 text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400"
               >
                 <Linkedin className="w-6 h-6" />
+              </a>
+              <a
+                href="https://leetcode.com/u/Muhtasim-Fuad-Showmik/"
+                className="transition-colors transform hover:scale-110 text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400"
+              >
+                <TbBrandLeetcode className="w-6 h-6" />
               </a>
             </div>
           </div>
