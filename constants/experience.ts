@@ -1,6 +1,7 @@
 export const experience = [
   {
     company: "Zolo Inc",
+    companyUrl: "https://www.zoloinc.com/",
     title: "Senior Software Engineer",
     period: "Mar. 2024 - Present",
     techStack: ["Next/React", "TypeScript", "Redux", "RTK Query", ".NET", "Entity Framework Core", "Tailwind", "AWS (EC2, Amplify, S3, RDS)", "PostgreSQL", "Redis", "Docker"],
@@ -20,6 +21,7 @@ export const experience = [
   },
   {
     company: "Schertech (SCT-Bangla)",
+    companyUrl: "https://www.schertech.com/en",
     title: "Deputy Team Lead from Senior Developer",
     period: "Sep. 2022 - Feb. 2024",
     techStack: ["TypeScript", "Node.js", "React", "Angular", "PostgreSQL", "Tailwind", "Cypress", "Docker", "AWS (S3, EC2)", "PHP", "SAP (UI5, CAP, S4 Hana)"],
@@ -42,6 +44,7 @@ export const experience = [
   },
   {
     company: "CEGIS",
+    companyUrl: "https://www.cegisbd.com/",
     title: "Junior Programmer",
     period: "Sep. 2020 - Aug. 2022",
     techStack: [".NET (MVC, Web API, Web Forms, Entity Framework, Razor Pages)", "Cake PHP", "MySQL", "PostgreSQL", "Oracle SQL", "Django", "Selenium", "Chart JS"],

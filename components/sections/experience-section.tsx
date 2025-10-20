@@ -27,9 +27,14 @@ const ExperienceSection: React.FC = () => {
                   <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
                     {exp.title}
                   </h3>
-                  <p className="text-xl font-semibold text-gray-700 dark:text-gray-300">
+                  <a
+                    href={exp.companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl font-semibold text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 transition-colors"
+                  >
                     {exp.company}
-                  </p>
+                  </a>
                 </div>
                 <span className="text-green-500 font-semibold mt-2 md:mt-0">
                   {exp.period}
