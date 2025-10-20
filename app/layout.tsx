@@ -37,12 +37,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="relative overflow-x-hidden min-h-screen transition-colors duration-300 bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 dark:text-gray-100">
+          <div className="relative min-h-screen flex flex-col">
             <AnimatedBackgroundElements />
             <Navbar />
-            {children}
+            <main className="flex-grow transition-colors duration-300 bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 dark:text-gray-100">
+              {children}
+            </main>
             <Footer />
-          </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>
