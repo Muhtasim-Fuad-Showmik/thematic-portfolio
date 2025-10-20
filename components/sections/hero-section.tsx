@@ -1,5 +1,5 @@
 import { ChevronRight, Github, Linkedin, Mail } from "lucide-react";
-import React from "react";
+import ProfileImageReveal from "../profile-image-reveal";
 
 const HeroSection = () => {
   return (
@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="mb-8 flex justify-center">
             <div className="p-1 rounded-full bg-gradient-to-r from-green-500 to-green-600">
               <div className="rounded-full p-1 bg-white dark:bg-gray-900">
-                Profile Image
+                <ProfileImageReveal imageSrc="/profile_picture_bw.jpeg" />
               </div>
             </div>
           </div>
