@@ -10,7 +10,7 @@ export const AnimatedPixelGrid = ({
     pixels.push(
       <div
         key={i}
-        className="rounded-sm animate-pulse bg-[#2ea44f] dark:bg-[#3fb950]"
+        className="rounded-xs animate-pulse bg-[#2ea44f] dark:bg-[#3fb950]"
         style={{
           width: `${size}px`,
           height: `${size}px`,
