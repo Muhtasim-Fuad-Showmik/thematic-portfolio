@@ -3,9 +3,7 @@ import { navItems } from "@/constants/navItems";
 import React, { useState } from "react";
 import { ThemeToggle } from "./theme-toggle";
 
-type NavbarProps = {};
-
-const Navbar: React.FC<NavbarProps> = ({}) => {
+const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
