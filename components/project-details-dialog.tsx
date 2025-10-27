@@ -25,8 +25,8 @@ const ProjectDetailsDialog: React.FC<Props> = ({
         }
       }}
     >
-      <DialogContent className="flex items-center justify-center bg-white dark:bg-gray-800">
-        <div className="rounded-xl max-w-full w-full max-h-[90vh] overflow-y-auto shadow-2xl p-8">
+      <DialogContent className="flex items-center justify-center md:w-3/4 w-4/5 bg-white dark:bg-gray-800">
+        <div className="rounded-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl md:p-8 p-2">
           <div className="flex justify-between items-start mb-8">
             <div>
               <h2
